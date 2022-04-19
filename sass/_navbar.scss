@@ -1,0 +1,79 @@
+body{
+	font-family: sans-serif;
+	background: #023e8a;
+}
+
+nav{
+	background: linear-gradient( to bottom right, #023e8a);
+	height: 80px;
+	width: 100%;
+}
+
+label.logo {
+	color: white;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+label .wrap{
+	height: 55px;
+	width: 55px;
+	font-size: 25px;
+	border: 3px solid;
+	color: #72efdd;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	display: inline-flex;
+	cursor: pointer;
+	
+}
+
+
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 20px;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+/*creo effetto bottone con hover*/
+a .active, a:hover{
+	background: linear-gradient(60deg, #1b9bff, #72efdd);
+	transition: .5s;
+	padding: 8px 15px;
+	border-radius: 50px;
+}
+
+.checkbtn {
+	float: right;
+	color: white;
+	font-size: 30px;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none; 
+	
+}
+
+#check{
+	display: none;
+}
+
+section{
+	background-size: cover;
+	background: no-repeat;
+	height: calc(100vh - 80px);
+}

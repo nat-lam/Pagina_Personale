@@ -1,0 +1,127 @@
+
+/*logo hover effect*/
+.wrap:hover{
+    animation: pulse 1s ease-in-out;
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 25px #5ddcff,
+        0 0 50px #1b9bff;
+    }
+}
+/*****/ 
+section {
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    background: linear-gradient(#023e8a);
+    overflow: hidden;
+}
+
+img {
+    display: flex;
+    float: right;
+    height: 35vh;
+    width: 35vh;
+    margin-top: 14vh;
+    margin-right: 15vh;
+    border-radius: 50%;
+    border: 3px solid #72efdd;
+}
+.container{
+    margin-top: 18vh;
+    margin-left: 20vh;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.2;
+    //padding-top: 190px
+}
+
+.name {
+    background-image: linear-gradient( 90deg, #1dc4ca, #2cf9db);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.text h3{
+    color: #eee;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.text p{
+    color: #eee;
+    font-weight: 400;
+    font-size: 40px;
+}
+/*effetto sottolinetao*/
+.job{
+    position: relative;
+}
+.job::after{
+    position: absolute;
+    content: '';
+    background: #72efdd;
+    height: 3px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+.job:hover:after{
+    width: 100%;
+}
+/*********************/ 
+
+.skills{
+    display: inline-flex;
+    margin-top: 40px;
+    margin-left: 20vh;
+}
+
+.skills .statico{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.skills .dinamico{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.skills .dinamico li{
+    color: #72efdd;
+    list-style: none;
+    font-size: 55px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+.dinamico li span{
+    position: relative; /*toglie il continuo delle linee verticali create con border-left*/
+}
+
+.dinamico li span::after{
+     content: '';
+     position: absolute;
+     left: 0;
+     height: 120%;
+     width: 100%;
+     background: #023e8a;
+     border-left: 3px solid #72efdd;
+     animation: typing 1.5s steps(10) infinite;
+    }
+    @keyframes typing {
+        100%{
+            left: 100%;
+            margin: 0 35px 0 35px;
+        }
+    }
