@@ -1,18 +1,5 @@
 
-.col-1 {max-width: 8.33%;}
-.col-2 {max-width: 16.66%;}
-.col-3 {max-width: 25%;}
-.col-4 {max-width: 33.33%;}
-.col-5 {max-width: 41.66%;}
-.col-6 {max-width: 50%;}
-.col-7 {max-width: 58.33%;}
-.col-8 {max-width: 66.66%;}
-.col-9 {max-width: 75%;}
-.col-10 {max-width: 83.33%;}
-.col-11 {max-width: 91.66%;}
-.col-12 {max-width: 100%;}
-
-@media (max-width: 858px){
+@media (max-width: 768px){
     //contatti 
     h4{
         width: 50%;
@@ -21,7 +8,6 @@
     }
     .input-field{
         width: fit-content;
-      
     } 
     .btn{
         margin-left: 0;
@@ -31,7 +17,7 @@
     .pagina{
         display: inline-flex;
         flex-wrap: wrap;
-        width: 80%;
+        width: 75%;
     }
     .foto{
         margin-left: 40%;
@@ -45,10 +31,6 @@
 
     //nav bar
 
-    body{
-        overflow: hidden;
-    }
-
 	.checkbtn{
 		display: block;
 		color: #72efdd;
@@ -56,12 +38,12 @@
 	}
 	
 	ul{
-		position: fixed;
+		position: absolute;
 		width: 100%;
-		height: 100vh;
+		height: 35vh;
 		background: #2c3e50;
 		top: 80px;
-		left: -1000px;
+		left: -100%;
 		text-align: center;
 		transition: all .9s;
 		z-index: 1;
@@ -71,6 +53,7 @@
         display: block;
 		margin: 50px 0;
 		line-height: 30px;
+        
 	}
 	nav ul li a{
 		font-size: 20px;
@@ -82,29 +65,88 @@
 	#check:checked ~ ul{
 		left: 0;
 	}
+
 	// tolgo l'effetto ondulato sui cellulari 
+
 	section .wave{
 		display: none;
 	}
 	 .wrapper{
           display: none;
      }
+
+     .contattiwrap{
+         width: 100%;
+     }
+
+     .input-field{
+         width: 100%;
+     }
+
+     .contact-box{
+        margin-left: auto;
+        margin-top: auto;
+    }
+
 }
-/*mobile form*/
-@media (min-width: 500px){
-    .contattiwrap{
-        width: fit-content;
+
+
+
+
+
+
+/*mobile responsive*/
+
+@media (min-width: 360px) and (max-width: 768px){
+
+    .container{
+        margin-left: auto;
+        padding: 30px;
+    }
+
+    .text h3{
+        color: #eee;
+        font-weight: 400;
+        font-size: 2rem; //40px 2.5rem
     }
     
-    .input-field{
-        width: 350px;
-        margin-left: -300px;
-    } 
-    .btn{
-        margin-left: -300px;
+    .text p{
+        color: #eee;
+        font-weight: 400;
+        font-size: 2rem; //40px 2.5rem
     }
+
+    .name{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .foto{
+        max-width: 35vh;
+        max-height: 35vh;
+        align-content: center;
+    }
+
+
+
+
     .testo{
-        margin-left: 25%;
+        margin-left: auto;
+        padding: 30px;
     }
-   
+
+    .h4{
+        margin-left: auto;
+        font-size: 10px;
+
+    }
+
+    .presentazione{
+        font-size: 2rem;
+        padding: 20px 20px;
+    }
+
+    body{
+        overflow: auto;
+    }
 }
