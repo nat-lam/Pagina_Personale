@@ -1,5 +1,4 @@
 nav {
-  background: -webkit-gradient(linear, left top, right bottom, from(#023e8a));
   background: linear-gradient(to bottom right, #023e8a);
   height: 80px;
   width: 100%;
@@ -20,14 +19,8 @@ label .wrap {
   border: 3px solid;
   color: #72efdd;
   border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+  align-items: center;
+  justify-content: center;
   display: inline-flex;
   cursor: pointer;
 }
@@ -52,8 +45,7 @@ nav ul li a {
 /*creo effetto bottone con hover*/
 a .active, a:hover {
   background: linear-gradient(60deg, #1b9bff, #72efdd);
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
   padding: 8px 15px;
   border-radius: 50px;
 }
@@ -147,7 +139,6 @@ section {
     background-position: 1000px;
   }
 }
-
 @-webkit-keyframes animate2 {
   0% {
     background-position-x: 0;
@@ -156,7 +147,6 @@ section {
     background-position-x: -1000px;
   }
 }
-
 @keyframes animate2 {
   0% {
     background-position-x: 0;
@@ -165,7 +155,6 @@ section {
     background-position-x: -1000px;
   }
 }
-
 /*logo hover effect*/
 .wrap:hover {
   -webkit-animation: pulse 1s ease-in-out;
@@ -174,31 +163,25 @@ section {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #1b9bff;
-            box-shadow: 0 0 25px #5ddcff, 0 0 50px #1b9bff;
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #1b9bff;
   }
 }
 
 @keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #1b9bff;
-            box-shadow: 0 0 25px #5ddcff, 0 0 50px #1b9bff;
+    box-shadow: 0 0 25px #5ddcff, 0 0 50px #1b9bff;
   }
 }
-
 /*****/
 section {
   position: relative;
   height: 90vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#023e8a));
   background: linear-gradient(#023e8a);
   overflow: hidden;
 }
 
 .foto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   float: right;
   height: 35vh;
@@ -218,7 +201,6 @@ section {
 }
 
 .name {
-  background-image: -webkit-gradient(linear, left top, right top, from(#1dc4ca), to(#2cf9db));
   background-image: linear-gradient(90deg, #1dc4ca, #2cf9db);
   color: transparent;
   -webkit-background-clip: text;
@@ -243,13 +225,12 @@ section {
 
 .job::after {
   position: absolute;
-  content: '';
+  content: "";
   background: #72efdd;
   height: 3px;
   width: 0;
   bottom: 0;
   left: 0;
-  -webkit-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out;
 }
 
@@ -274,16 +255,10 @@ section {
 
 /* cards */
 .cards-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
   margin-top: 25vh;
 }
 
@@ -296,10 +271,8 @@ section {
 }
 
 .card-html:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 2px 2px 2px 2px #4e4e4e;
-          box-shadow: 2px 2px 2px 2px #4e4e4e;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px 2px rgb(78, 78, 78);
 }
 
 .fa-html5 {
@@ -324,10 +297,8 @@ section {
 }
 
 .card-css:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 2px 2px 2px 2px #4e4e4e;
-          box-shadow: 2px 2px 2px 2px #4e4e4e;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px 2px rgb(78, 78, 78);
 }
 
 .fa-css3-alt {
@@ -352,10 +323,8 @@ section {
 }
 
 .card-sass:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 2px 2px 2px 2px #4e4e4e;
-          box-shadow: 2px 2px 2px 2px #4e4e4e;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px 2px rgb(78, 78, 78);
 }
 
 .fa-sass {
@@ -425,11 +394,8 @@ form {
   border: 1px solid #777;
   border-radius: 14px;
   outline: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .textarea-field {
@@ -450,12 +416,8 @@ form {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 10px;
   margin-top: 10px;
   padding-bottom: 10px;
@@ -466,8 +428,6 @@ footer {
 }
 
 .let {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #fff;
   font-size: 20px;
@@ -480,8 +440,6 @@ footer {
 }
 
 .fa-facebook {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #fff;
   font-size: 30px;
@@ -490,8 +448,6 @@ footer {
 }
 
 .fa-instagram {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #fff;
   font-size: 30px;
@@ -500,8 +456,6 @@ footer {
 }
 
 .fa-git-alt {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   color: #fff;
   font-size: 30px;
@@ -524,18 +478,13 @@ footer {
     margin-left: 0;
   }
   .pagina {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 75%;
   }
   .foto {
     margin-left: 40%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   h2 {
     width: 50%;
@@ -554,8 +503,7 @@ footer {
     top: 80px;
     left: -100%;
     text-align: center;
-    -webkit-transition: all .9s;
-    transition: all .9s;
+    transition: all 0.9s;
     z-index: 1;
     overflow-y: hidden;
   }
@@ -591,7 +539,6 @@ footer {
     margin-top: auto;
   }
 }
-
 /*mobile responsive*/
 @media (min-width: 360px) and (max-width: 768px) {
   .container {
@@ -615,8 +562,7 @@ footer {
   .foto {
     max-width: 35vh;
     max-height: 35vh;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
   .testo {
     margin-left: auto;
@@ -634,17 +580,14 @@ footer {
     overflow: auto;
   }
 }
-
 * {
   padding: 0;
   margin: 0;
   text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
   background: #023e8a;
-}
-/*# sourceMappingURL=paginapers.css.map */
+}/*# sourceMappingURL=paginapers.css.map */
